@@ -1,5 +1,5 @@
 {
-  "name": "node-matroska",
+  "name": "matroska",
   "version": "1.2.0",
   "description": "Matroska node parser",
   "main": "index.js",
