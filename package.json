@@ -1,0 +1,33 @@
+{
+  "name": "node-matroska",
+  "version": "1.2.0",
+  "description": "Matroska node parser",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:oeuillot/node-matroska.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oeuillot/node-matroska/issues"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "keywords": [
+     "ebml",
+     "webm",
+     "mkv",
+     "matroska",
+     "format"
+   ],
+   "dependencies": {
+  	 "debug": "~0.7.2",
+     "async": "latest",
+     "crc": "latest"
+   },
+	"devDependecies": {	 
+	},
+  "author": "Olivier Oeuillot",
+  "license": "GPL",
+  "readmeFilename": "README.md"
+}
