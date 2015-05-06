@@ -5,5 +5,5 @@ module.exports = {
 	Decoder: require('./lib/decoder'),
 	Document: require('./lib/document'),
 	Document2: require('./lib/document2'),
-	Tag: require('./lib/tag')
+	Schema: require('./lib/schema')
 };
