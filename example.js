@@ -2,7 +2,7 @@ var ebml = require('./index.js');
 var fs = require('fs');
 var util = require('util');
 
-var decoder = new ebml.Decoder();
+var decoder = new ebml.Decoder(EbmlDecoder.OnlyMetaDatas());
 
 var filename = process.argv[2];
 console.log("Parsing ... " + filename);
