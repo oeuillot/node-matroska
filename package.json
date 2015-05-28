@@ -1,6 +1,6 @@
 {
   "name": "matroska",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Matroska node parser",
   "main": "index.js",
   "repository": {
