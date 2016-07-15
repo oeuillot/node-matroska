@@ -7,7 +7,7 @@ It is a fork of https://github.com/themasch/node-ebml
 # VERY Fast parsing
 
 Fast and incomplete parsing of a mkv file:   (we keep only metadatas)
-````
+```js
 var matroska = require('matroska');
 
 var url="http://download.wavetlan.com/SVV/Media/HTTP/mkv/H264_PCM(mkvmerge).mkv";
@@ -20,10 +20,10 @@ matroska.Decoder.parseInfoTagsAndAttachments(url, function(error, document) {
 
 	console.log(document.print());
 });
-````
+```
 
 Returns a tree:  (format:  offset#tagId  * node)
-`````
+````
          0#0     * Document  [HttpSource url=http://download.wavetlan.com/SVV/Media/HTTP/mkv/H264_PCM(mkvmerge).mkv]
          0#1       * EBML  children[size=40]
          5#2         * EBMLVersion  u[1]=1
@@ -51,12 +51,12 @@ Returns a tree:  (format:  offset#tagId  * node)
       4263#24          * Duration  f[4]=388000
       4270#25          * DateUTC  d[8]=Fri Sep 23 2011 00:33:39 GMT+0200 (Paris, Madrid (heure d’été))
       4281#26          * SegmentUID  b[16]=8e9c49d7b307eb148bd386041b43d6ca
-````
+```
 
 # COMPLETE parsing
 
 Complete parsing of a mkv:
-````
+```js
 var matroska = require('matroska');
 
 var url="http://download.wavetlan.com/SVV/Media/HTTP/mkv/H264_mp3(mkvmerge).mkv";
@@ -71,10 +71,10 @@ decoder.parse(url, function(error, document) {
 	console.log(document.print());
 });
 
-````
+```
 
 Returns: 
-`````````
+```
          0#0     * Document  [FileSource file=G:\Downloads\H264_mp3(mkvmerge).mkv]
          0#1       * EBML  children[size=40]
          5#2         * EBMLVersion  u[1]=1
@@ -185,7 +185,7 @@ Returns:
    3661207#2178            * CueTrack  u[1]=1
    3661210#2179            * CueClusterPosition  u[3]=3399159  [=>#1959]
 
-````````
+```
 
 # Edition of MKV
 
